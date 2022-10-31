@@ -1,0 +1,62 @@
+{
+    "Japanese Breakfast": {
+        "artist": "Japanese Breakfast",
+        "watchCount": 206,
+        "mostWatchedSongTitle": "Paprika",
+        "lastWatchedDatetime": "2022-04-24T12:08:15.509Z"
+    },
+    "Julien Baker": {
+        "artist": "Julien Baker",
+        "watchCount": 182,
+        "mostWatchedSongTitle": "Ringside",
+        "lastWatchedDatetime": "2022-04-22T22:13:03.211Z"
+    },
+    "BROCKHAMPTON": {
+        "artist": "BROCKHAMPTON",
+        "watchCount": 158,
+        "mostWatchedSongTitle": "NEW ORLEANS",
+        "lastWatchedDatetime": "2022-04-22T23:01:02.842Z"
+    },
+    "Mitski": {
+        "artist": "Mitski",
+        "watchCount": 154,
+        "mostWatchedSongTitle": "Heat Lightning",
+        "lastWatchedDatetime": "2022-03-30T17:49:43.314Z"
+    },
+    "Charli XCX": {
+        "artist": "Charli XCX",
+        "watchCount": 150,
+        "mostWatchedSongTitle": "New Shapes (feat. Christine and the Queens and Caroline Polachek)",
+        "lastWatchedDatetime": "2022-04-24T15:41:01.644Z"
+    },
+    "Manchester Orchestra": {
+        "artist": "Manchester Orchestra",
+        "watchCount": 150,
+        "mostWatchedSongTitle": "The Internet",
+        "lastWatchedDatetime": "2021-12-31T17:46:19.091Z"
+    },
+    "Phoebe Bridgers": {
+        "artist": "Phoebe Bridgers",
+        "watchCount": 149,
+        "mostWatchedSongTitle": "Motion Sickness",
+        "lastWatchedDatetime": "2022-04-24T14:43:52.100Z"
+    },
+    "Kanye West": {
+        "artist": "Kanye West",
+        "watchCount": 149,
+        "mostWatchedSongTitle": "Wolves",
+        "lastWatchedDatetime": "2022-04-22T22:56:01Z"
+    },
+    "PUP": {
+        "artist": "PUP",
+        "watchCount": 139,
+        "mostWatchedSongTitle": "Relentless",
+        "lastWatchedDatetime": "2022-04-24T15:17:57.518Z"
+    },
+    "Tyler, The Creator": {
+        "artist": "Tyler, The Creator",
+        "watchCount": 137,
+        "mostWatchedSongTitle": "WHAT'S GOOD",
+        "lastWatchedDatetime": "2022-04-24T12:49:49.105Z"
+    }
+}
