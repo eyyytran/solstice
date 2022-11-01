@@ -116,11 +116,11 @@ const cleanWatchHistory = (data: WatchHistory) => {
 
     try {
         fs.writeFileSync(
-            'src/data/songData.json',
+            'src/data/topSongs.json',
             JSON.stringify(Object.fromEntries(songArray), null, process.env.DEBUG ? 4 : 0)
         )
         fs.writeFileSync(
-            'src/data/artistData.json',
+            'src/data/topArtists.json',
             JSON.stringify(topArtists, null, process.env.DEBUG ? 4 : 0)
         )
         console.log('finished writing files')

@@ -69,8 +69,8 @@ var cleanWatchHistory = function (data) {
     artistArray.sort(function (a, b) { return b[1].watchCount - a[1].watchCount; });
     var topArtists = Object.fromEntries(artistArray.slice(0, Math.min(NUMBER_OF_TOP_ARTISTS, artistArray.length)));
     try {
-        fs.writeFileSync('src/data/songData.json', JSON.stringify(Object.fromEntries(songArray), null, process.env.DEBUG ? 4 : 0));
-        fs.writeFileSync('src/data/artistData.json', JSON.stringify(topArtists, null, process.env.DEBUG ? 4 : 0));
+        fs.writeFileSync('src/data/topSongs.json', JSON.stringify(Object.fromEntries(songArray), null, process.env.DEBUG ? 4 : 0));
+        fs.writeFileSync('src/data/topArtists.json', JSON.stringify(topArtists, null, process.env.DEBUG ? 4 : 0));
         console.log('finished writing files');
     }
     catch (err) {
