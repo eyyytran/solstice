@@ -13,7 +13,7 @@ const Artist: FC<Props> = ({ artist, number }) => {
         <div>
             <h1>{number}</h1>
             <div>{artist.artist}</div>
-            <div>{artist.watchCount}</div>
+            <div>Watch Count: {artist.watchCount}</div>
             <div>Last Watch: {lastDateWatched.toLocaleDateString()}</div>
             <div>Your Top Song: {artist.mostWatchedSongTitle}</div>
         </div>
