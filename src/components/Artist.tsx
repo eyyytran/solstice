@@ -1,21 +1,32 @@
 import { FC } from 'react'
 import IArtistDataItem from '../interfaces/IArtistDataItem'
+import topSongs from '../data/topSongs.json'
+import ISongDataItem from '../interfaces/ISongDataItem'
 
 interface Props {
     artist: IArtistDataItem
-    key: number
-    number: number
+    rank: number
 }
 
-const Artist: FC<Props> = ({ artist, number }) => {
-    const lastDateWatched = new Date(artist.lastWatchedDatetime)
+const Artist: FC<Props> = ({ artist, rank }) => {
+    const songs = topSongs as Record<string, ISongDataItem>
+    const artistsTopSong = songs[`${artist.artist}-${artist.mostWatchedSongTitle}`]
     return (
-        <div>
-            <h1>{number}</h1>
+        <div className='artist-container'>
+            <h1>{rank}</h1>
+            {artistsTopSong && (
+                <div>
+                    <a href={artistsTopSong.url}>
+                        <img src={artistsTopSong.thumbnail} alt='album cover' />
+                    </a>
+                </div>
+            )}
             <div>{artist.artist}</div>
-            <div>Watch Count: {artist.watchCount}</div>
-            <div>Last Watch: {lastDateWatched.toLocaleDateString()}</div>
-            <div>Your Top Song: {artist.mostWatchedSongTitle}</div>
+            <div>Watched {artist.watchCount} times</div>
+            <div>Top Song: {artist.mostWatchedSongTitle}</div>
+            <div>
+                Artist last watched on {new Date(artist.lastWatchedDatetime).toLocaleString()}
+            </div>
         </div>
     )
 }

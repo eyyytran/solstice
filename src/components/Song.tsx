@@ -3,24 +3,25 @@ import ISongDataItem from '../interfaces/ISongDataItem'
 
 interface Props {
     song: ISongDataItem
-    key: number
-    number: number
+    rank: number
 }
 
-const Song: FC<Props> = ({ song, number }) => {
+const Song: FC<Props> = ({ song, rank }) => {
     const lastDateWatched = new Date(song.lastWatchedDatetime)
-
+    const { url, thumbnail, artist, title, watchCount } = song
     return (
-        <div>
-            <h1>{number}</h1>
+        <div className='song-container'>
+            <h1>{rank}</h1>
             <div>
-                <img src={song.thumbnail} alt='album cover' />
+                <a href={url}>
+                    <img src={thumbnail} alt='album cover' />
+                </a>
             </div>
             <div>
-                {song.title} - {song.artist}
+                {title} - {artist}
             </div>
-            <div>Number of Watches: {song.watchCount}</div>
-            <div>Last Watched: {lastDateWatched.toLocaleDateString()}</div>
+            <div>Watched {watchCount} times</div>
+            <div>Last Watched on {lastDateWatched.toLocaleString()}</div>
         </div>
     )
 }
